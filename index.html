@@ -184,9 +184,9 @@
 
     // Determinar el estatus del clima basado en la temperatura
     function determinarEstatusClima(temperatura) {
-      if (temperatura > 26) {
+      if (temperatura < 29) {
         return "ON"; // Clima encendido
-      } else if (temperatura < 22) {
+      } else if (temperatura > 30 ) {
         return "OFF"; // Clima apagado
       } else {
         return "OFF"; // Clima no es necesario
